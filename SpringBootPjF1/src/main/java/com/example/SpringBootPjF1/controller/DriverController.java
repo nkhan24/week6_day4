@@ -21,12 +21,12 @@ public class DriverController {
     public DriverController(DriverRepository driverRepository){
         this.driverRepository = driverRepository ;
     }
-    @GetMapping("/constructors")
+    @GetMapping("/drivers")
     public ResponseEntity<List<Driver>> getAllCategory(){
         List<Driver> drivers = driverRepository.findAll();
         return ResponseEntity.ok().body(drivers);
     }
-    @PostMapping("/constructors")
+    @PostMapping("/drivers")
     public ResponseEntity<Driver> createdriver(@RequestBody Driver driver){
         Driver result = driverRepository.save(driver);
         return ResponseEntity.ok().body(result);
