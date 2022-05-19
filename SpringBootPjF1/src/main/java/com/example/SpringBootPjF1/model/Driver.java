@@ -37,8 +37,8 @@ public class Driver {
         this.race = race;
     }
 
-}
 //Getters and Setters
+
     public Long getId() {
         return id;
     }
@@ -79,11 +79,11 @@ public class Driver {
         this.constructor = constructor;
     }
 
-    public List<Formula> getRaces() {
-        return races;
+    public Set<Category> getRace() {
+        return race;
     }
 
-    public void setRaces(List<Formula> races) {
-        this.races = races;
+    public void setRace(Set<Category> race) {
+        this.race = race;
     }
 }
