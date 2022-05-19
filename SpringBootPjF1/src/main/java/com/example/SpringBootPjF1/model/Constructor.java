@@ -6,7 +6,7 @@ import java.util.List;
 public class Constructor {
     //Defining objects with types
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String team;
     private int titles;

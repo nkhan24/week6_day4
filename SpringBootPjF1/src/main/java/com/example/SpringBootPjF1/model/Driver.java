@@ -1,5 +1,7 @@
 package com.example.SpringBootPjF1.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.Set;
@@ -7,7 +9,7 @@ import java.util.Set;
 public class Driver {
     //Defining objects with types
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String first_name;
     private String last_name;
@@ -23,7 +25,9 @@ public class Driver {
     //CascadeType.ALL allows Hibernate to propagate all actions
 
 
-    @ManyToMany //many categories can contain different drivers of same series
+    @ManyToMany(cascade = CascadeType.ALL) //many categories can contain different drivers of same series
+    @JoinTable(name = "Race", joinColumns = @JoinColumn(name = "driver_id"),inverseJoinColumns = @JoinColumn(name = "category_id"))
+    @JsonIgnoreProperties(value = {"names"})
     private Set<Category> race;
 
 // Constructors
