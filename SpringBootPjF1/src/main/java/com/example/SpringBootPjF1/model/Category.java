@@ -16,7 +16,6 @@ public class Category {
 
 //Constructors
 
-
     public Category(Long id, String series, String country, String circuit, Set<Driver> names) {
         this.id = id;
         this.series = series;
@@ -29,7 +28,6 @@ public class Category {
     private Set<Driver> names;
 
     //getters and setters
-
 
     public Long getId() {
         return id;

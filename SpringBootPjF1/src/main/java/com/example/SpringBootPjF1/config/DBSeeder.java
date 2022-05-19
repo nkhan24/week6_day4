@@ -40,26 +40,6 @@ public class DBSeeder implements ApplicationRunner {
         Constructor c13 = new Constructor(null,"Mercedes GT3",4,null);
         Constructor c14 = new Constructor(null,"BMW M4 GT3",3,null);
 
-        Driver d1 = new Driver(null, "Charles", "Leclerc", 0, c1, null);
-        Driver d2 = new Driver(null, "Carlos", "Sainz", 0, c1, null);
-        Driver d3 = new Driver(null, "Max", "Verstappen", 1, c2, null);
-        Driver d4 = new Driver(null, "Sergio", "Perez", 0, c2, null);
-        Driver d5 = new Driver(null, "Lewis", "Hamilton", 7, c3, null);
-        Driver d6 = new Driver(null, "George", "Russel", 0, c3, null);
-        Driver d7 = new Driver(null, "Lando", "Norris", 0, c4, null);
-        Driver d8 = new Driver(null, "Daniel", "Ricciardo", 0, c4, null);
-        Driver d9 = new Driver(null, "Zhou", "Guanyu", 0, c5, null);
-        Driver d10 = new Driver(null, "Valtteri", "Bottas", 0, c5, null);
-        Driver d11 = new Driver(null, "Fernando", "Alonso", 2, c6, null);
-        Driver d12 = new Driver(null, "Esteban", "Ocon", 0, c6, null);
-        Driver d13 = new Driver(null, "Yuki", "Tsunoda", 0, c7, null);
-        Driver d14 = new Driver(null, "Pierre", "Gasly", 0, c7, null);
-        Driver d15 = new Driver(null, "Mick", "Schumacher", 0, c8, null);
-        Driver d16 = new Driver(null, "Kevin", "Magnussen", 0, c8, null);
-        Driver d17 = new Driver(null, "Sebastian", "Vettel", 4, c9, null);
-        Driver d18 = new Driver(null, "Lance", "Stroll", 0, c9, null);
-        Driver d19 = new Driver(null, "Alexander", "Albon", 0, c10, null);
-        Driver d20 = new Driver(null, "Nicholas", "Latifi", 0, c10, null);
 
         Category cy1 = new Category(null, "F1", "Bahrain", "Bahrain Int Circuit", null);
         Category cy2 = new Category(null, "F1", "Bahrain", "Bahrain Int Circuit", null);
@@ -81,6 +61,28 @@ public class DBSeeder implements ApplicationRunner {
         Category cy18 = new Category(null, "GT3", "San Marino", "Misano", null);
         Category cy19 = new Category(null, "GT3", "Hungary", "Hungaroring", null);
         Category cy20 = new Category(null, "GT3", "Japan", "Suzuka", null);
+
+
+        Driver d1 = new Driver(null, "Charles", "Leclerc", 0, c1, null);
+        Driver d2 = new Driver(null, "Carlos", "Sainz", 0, c1, null);
+        Driver d3 = new Driver(null, "Max", "Verstappen", 1, c2, null);
+        Driver d4 = new Driver(null, "Sergio", "Perez", 0, c2, null);
+        Driver d5 = new Driver(null, "Lewis", "Hamilton", 7, c3, null);
+        Driver d6 = new Driver(null, "George", "Russel", 0, c3, null);
+        Driver d7 = new Driver(null, "Lando", "Norris", 0, c4, null);
+        Driver d8 = new Driver(null, "Daniel", "Ricciardo", 0, c4, null);
+        Driver d9 = new Driver(null, "Zhou", "Guanyu", 0, c5, null);
+        Driver d10 = new Driver(null, "Valtteri", "Bottas", 0, c5, null);
+        Driver d11 = new Driver(null, "Fernando", "Alonso", 2, c6, null);
+        Driver d12 = new Driver(null, "Esteban", "Ocon", 0, c6, null);
+        Driver d13 = new Driver(null, "Yuki", "Tsunoda", 0, c7, null);
+        Driver d14 = new Driver(null, "Pierre", "Gasly", 0, c7, null);
+        Driver d15 = new Driver(null, "Mick", "Schumacher", 0, c8, null);
+        Driver d16 = new Driver(null, "Kevin", "Magnussen", 0, c8, null);
+        Driver d17 = new Driver(null, "Sebastian", "Vettel", 4, c9, null);
+        Driver d18 = new Driver(null, "Lance", "Stroll", 0, c9, null);
+        Driver d19 = new Driver(null, "Alexander", "Albon", 0, c10, null);
+        Driver d20 = new Driver(null, "Nicholas", "Latifi", 0, c10, null);
 
     }
 }
