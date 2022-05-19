@@ -1,5 +1,7 @@
 package com.example.SpringBootPjF1.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.Set;
@@ -24,7 +26,8 @@ public class Category {
         this.names = names;
     }
 
-    @ManyToMany //Many drivers can be in different categories of motorsport
+    @ManyToMany(mappedBy = "race") //Many drivers can be in different categories of motorsport
+    @JsonIgnoreProperties(value = {"race"})
     private Set<Driver> names;
 
     //getters and setters
