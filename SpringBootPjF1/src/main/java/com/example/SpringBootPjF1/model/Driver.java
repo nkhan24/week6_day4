@@ -21,21 +21,23 @@ public class Driver {
     //Relationship defined by annotation OneToMany, Foreign key is contained within Formula class
     //Since mappedBy method indicates that entity on this side is the inverse of the relationship
     //CascadeType.ALL allows Hibernate to propagate all actions
-    @OneToMany(mappedBy = "driver", cascade = CascadeType.ALL) //connects one of drivers to Formula class
-    private List<Formula> races;
+
 
     @ManyToMany //many categories can contain different drivers of same series
     private Set<Category> race;
 
 // Constructors
-    public Driver(Long id, String first_name, String last_name, int titles, Constructor constructor, List<Formula> races) {
+
+    public Driver(Long id, String first_name, String last_name, int titles, Constructor constructor, Set<Category> race) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
         this.titles = titles;
         this.constructor = constructor;
-        this.races = races;
+        this.race = race;
     }
+
+}
 //Getters and Setters
     public Long getId() {
         return id;
