@@ -1,5 +1,7 @@
 package com.example.SpringBootPjF1.model;
 
+import org.springframework.data.jpa.repository.Query;
+
 import javax.persistence.*;
 import java.util.List;
 @Entity
