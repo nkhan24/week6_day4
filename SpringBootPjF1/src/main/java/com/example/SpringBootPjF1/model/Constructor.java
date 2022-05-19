@@ -15,8 +15,9 @@ public class Constructor {
     //Relationship defined by annotation OneToMany, Foreign key is contained within Driver class
     //Since mappedBy method indicates that entity on this side is the inverse of the relationship
     //CascadeType.ALL allows Hibernate to propagate all actions
-@OneToMany (mappedBy = "constructor", cascade = CascadeType.ALL)
+@OneToMany (mappedBy = "constructor")
 private List<Driver> drivers;
+
 
 // Constructors
     public Constructor(Long id, String team, int titles, List<Driver> constructors) {

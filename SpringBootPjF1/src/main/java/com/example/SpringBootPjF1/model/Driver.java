@@ -17,6 +17,7 @@ public class Driver {
 
     //Connects the relationship from the Constructor Class to the Driver class
     @ManyToOne
+    @JoinColumn(name = "constructor_id")
     private Constructor constructor;
 
 
