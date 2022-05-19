@@ -31,9 +31,4 @@ public class DriverController {
         Driver result = driverRepository.save(driver);
         return ResponseEntity.ok().body(result);
     }
-
-
-
-
-
 }
